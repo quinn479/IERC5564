@@ -1,0 +1,75 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "registrant",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "ephemeralPrivKey",
+        "type": "bytes"
+      }
+    ],
+    "name": "generateStealthAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "stealthAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "ephemeralPubKey",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "sharedSecret",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "viewTag",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "registrant",
+        "type": "address"
+      }
+    ],
+    "name": "stealthKeys",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "spendingPubKeyX",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "spendingPubKeyY",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "viewingPubKeyX",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "viewingPubKeyY",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

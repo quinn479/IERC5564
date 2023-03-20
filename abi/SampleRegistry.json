@@ -1,0 +1,147 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "registrant",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "generator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "spendingPubKey",
+        "type": "bytes"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "viewingPubKey",
+        "type": "bytes"
+      }
+    ],
+    "name": "StealthKeyChanged",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "generator",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "spendingPubKey",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "viewingPubKey",
+        "type": "bytes"
+      }
+    ],
+    "name": "registerKeys",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "registrant",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "generator",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "signature",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "spendingPubKey",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "viewingPubKey",
+        "type": "bytes"
+      }
+    ],
+    "name": "registerKeysOnBehalf",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "registrant",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "generator",
+        "type": "address"
+      }
+    ],
+    "name": "stealthKeys",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "spendingPubKey",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "viewingPubKey",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "stealthKeysRegistry",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

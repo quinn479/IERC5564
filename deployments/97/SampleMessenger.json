@@ -1,0 +1,111 @@
+{
+	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "bytes",
+					"name": "ephemeralPubKey",
+					"type": "bytes"
+				},
+				{
+					"indexed": true,
+					"internalType": "bytes32",
+					"name": "stealthRecipientAndViewTag",
+					"type": "bytes32"
+				},
+				{
+					"indexed": false,
+					"internalType": "bytes32",
+					"name": "metadata",
+					"type": "bytes32"
+				}
+			],
+			"name": "Announcement",
+			"type": "event"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes",
+					"name": "ephemeralPubKey",
+					"type": "bytes"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "stealthRecipientAndViewTag",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "metadata",
+					"type": "bytes32"
+				}
+			],
+			"name": "announce",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address payable",
+					"name": "_to",
+					"type": "address"
+				},
+				{
+					"internalType": "bytes",
+					"name": "ephemeralPubKey",
+					"type": "bytes"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "stealthRecipientAndViewTag",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "metadata",
+					"type": "bytes32"
+				}
+			],
+			"name": "privateETHTransfer",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		}
+	],
+	"address": "0x5C4256a92C65eb1d3Cea794bADD165bdaEA64740",
+	"deployTransaction": {
+		"hash": "0xcb3690918049f14467efc10cd63ecc3ae4678fd210986f2365f4ade818db1b7c",
+		"type": 0,
+		"accessList": null,
+		"blockHash": null,
+		"blockNumber": null,
+		"transactionIndex": null,
+		"confirmations": 0,
+		"from": "0x00481E0dE32FecFF1C7ce3AF19cb03E01aFC0e48",
+		"gasPrice": {
+			"type": "BigNumber",
+			"hex": "0x04a817c800"
+		},
+		"gasLimit": {
+			"type": "BigNumber",
+			"hex": "0x0393e6"
+		},
+		"to": null,
+		"value": {
+			"type": "BigNumber",
+			"hex": "0x00"
+		},
+		"nonce": 736,
+		"data": "0x608060405234801561001057600080fd5b50610347806100206000396000f3fe6080604052600436106100295760003560e01c8063365b440a1461002e5780635dfda22e14610050575b600080fd5b34801561003a57600080fd5b5061004e610049366004610223565b610063565b005b61004e61005e3660046101ba565b6100a2565b817f8881dd65faed231f278c306812caa0b740c86227627e904648b856aaaaee2f5f8483604051610095929190610272565b60405180910390a2505050565b6000846001600160a01b0316346040516100bb9061026f565b60006040518083038185875af1925050503d80600081146100f8576040519150601f19603f3d011682016040523d82523d6000602084013e6100fd565b606091505b50509050806101275760405162461bcd60e51b815260040161011e906102cd565b60405180910390fd5b610132848484610063565b5050505050565b600082601f830112610149578081fd5b813567ffffffffffffffff80821115610164576101646102fb565b604051601f8301601f191681016020018281118282101715610188576101886102fb565b60405282815284830160200186101561019f578384fd5b82602086016020830137918201602001929092529392505050565b600080600080608085870312156101cf578384fd5b84356001600160a01b03811681146101e5578485fd5b9350602085013567ffffffffffffffff811115610200578384fd5b61020c87828801610139565b949794965050505060408301359260600135919050565b600080600060608486031215610237578283fd5b833567ffffffffffffffff81111561024d578384fd5b61025986828701610139565b9660208601359650604090950135949350505050565b90565b6000604082528351806040840152815b8181101561029f5760208187018101516060868401015201610282565b818111156102b05782606083860101525b50602083019390935250601f91909101601f191601606001919050565b6020808252601490820152732330b4b632b2103a379039b2b7321022ba3432b960611b604082015260600190565b634e487b7160e01b600052604160045260246000fdfea264697066735822122041be1e01a1d4a44c4771be7389ea615d6e7fe55954a1aa3dc1e043cd26d2e4c364736f6c63430008000033",
+		"r": "0x42cd7216daa3ed687f1d079f3d368ad1cc1ca0f1558d7e98e8c6783ee8b82ddc",
+		"s": "0x73ab7444234d5197bd179d8ed75d51abe0ec26abd5998866ad4a3d1bf76fddc7",
+		"v": 230,
+		"creates": "0x5C4256a92C65eb1d3Cea794bADD165bdaEA64740",
+		"chainId": 97
+	}
+}

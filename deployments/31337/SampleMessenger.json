@@ -1,0 +1,119 @@
+{
+	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "bytes",
+					"name": "ephemeralPubKey",
+					"type": "bytes"
+				},
+				{
+					"indexed": true,
+					"internalType": "bytes32",
+					"name": "stealthRecipientAndViewTag",
+					"type": "bytes32"
+				},
+				{
+					"indexed": false,
+					"internalType": "bytes32",
+					"name": "metadata",
+					"type": "bytes32"
+				}
+			],
+			"name": "Announcement",
+			"type": "event"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes",
+					"name": "ephemeralPubKey",
+					"type": "bytes"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "stealthRecipientAndViewTag",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "metadata",
+					"type": "bytes32"
+				}
+			],
+			"name": "announce",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address payable",
+					"name": "_to",
+					"type": "address"
+				},
+				{
+					"internalType": "bytes",
+					"name": "ephemeralPubKey",
+					"type": "bytes"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "stealthRecipientAndViewTag",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "bytes32",
+					"name": "metadata",
+					"type": "bytes32"
+				}
+			],
+			"name": "privateETHTransfer",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		}
+	],
+	"address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+	"deployTransaction": {
+		"hash": "0x13d5480a3be7bb8e913e6c527e87c1e58ffc68a7bd69840c06de25dffb99564d",
+		"type": 2,
+		"accessList": [],
+		"blockHash": "0x8cbbfedfd17b07cce15dd856a4f823d33123c854c42bfe91711bbf6a7cc7c60d",
+		"blockNumber": 4,
+		"transactionIndex": 0,
+		"confirmations": 1,
+		"from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+		"gasPrice": {
+			"type": "BigNumber",
+			"hex": "0x5f62b7f7"
+		},
+		"maxPriorityFeePerGas": {
+			"type": "BigNumber",
+			"hex": "0x3b9aca00"
+		},
+		"maxFeePerGas": {
+			"type": "BigNumber",
+			"hex": "0x832aa5ee"
+		},
+		"gasLimit": {
+			"type": "BigNumber",
+			"hex": "0x0393e6"
+		},
+		"to": null,
+		"value": {
+			"type": "BigNumber",
+			"hex": "0x00"
+		},
+		"nonce": 3,
+		"data": "0x608060405234801561001057600080fd5b50610347806100206000396000f3fe6080604052600436106100295760003560e01c8063365b440a1461002e5780635dfda22e14610050575b600080fd5b34801561003a57600080fd5b5061004e610049366004610223565b610063565b005b61004e61005e3660046101ba565b6100a2565b817f8881dd65faed231f278c306812caa0b740c86227627e904648b856aaaaee2f5f8483604051610095929190610272565b60405180910390a2505050565b6000846001600160a01b0316346040516100bb9061026f565b60006040518083038185875af1925050503d80600081146100f8576040519150601f19603f3d011682016040523d82523d6000602084013e6100fd565b606091505b50509050806101275760405162461bcd60e51b815260040161011e906102cd565b60405180910390fd5b610132848484610063565b5050505050565b600082601f830112610149578081fd5b813567ffffffffffffffff80821115610164576101646102fb565b604051601f8301601f191681016020018281118282101715610188576101886102fb565b60405282815284830160200186101561019f578384fd5b82602086016020830137918201602001929092529392505050565b600080600080608085870312156101cf578384fd5b84356001600160a01b03811681146101e5578485fd5b9350602085013567ffffffffffffffff811115610200578384fd5b61020c87828801610139565b949794965050505060408301359260600135919050565b600080600060608486031215610237578283fd5b833567ffffffffffffffff81111561024d578384fd5b61025986828701610139565b9660208601359650604090950135949350505050565b90565b6000604082528351806040840152815b8181101561029f5760208187018101516060868401015201610282565b818111156102b05782606083860101525b50602083019390935250601f91909101601f191601606001919050565b6020808252601490820152732330b4b632b2103a379039b2b7321022ba3432b960611b604082015260600190565b634e487b7160e01b600052604160045260246000fdfea264697066735822122041be1e01a1d4a44c4771be7389ea615d6e7fe55954a1aa3dc1e043cd26d2e4c364736f6c63430008000033",
+		"r": "0xab1d2dcda6df31e325f171799930927a8855724e92e9ae17c18fcb746de8ef07",
+		"s": "0x3c46f3c8e8b019226d5402cef14178105800b83bc78b32b7b7a624c21ffaca54",
+		"v": 1,
+		"creates": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+		"chainId": 31337
+	}
+}
